@@ -32,6 +32,8 @@ renderUserInput();
 
 function renderUserInput() {
     var userDesc1 = localStorage.getItem("desc1");
+    $("#desc1").val(JSON.parse(userDesc1));
+    console.log(userDesc1);
 
     if(userDesc1 === null){
         return;
@@ -44,7 +46,7 @@ function renderUserInput() {
 saveBtnEl.on("click", function (event) {
     event.preventDefault();
     var input = $("#desc1").val();
-    localStorage.setItem("input", JSON.stringify(input));
+    localStorage.setItem("desc1", JSON.stringify(input));
 
     renderUserInput();
 });
