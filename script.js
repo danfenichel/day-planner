@@ -3,6 +3,8 @@ var currentDayEl = $("#currentDay");
 var saveBtnEl = $(".saveBtn");
 var textBoxEl = $(".time-block");
 
+var desc1El = $("#desc1");
+
 // Setting current day with moment.js
 currentDayEl.text(moment().format('MMMM Do YYYY, h:mm:ss a'));
 
@@ -25,10 +27,24 @@ var update = function () {
 // setting time interval to update every second
 setInterval(update, 1000);
 
+// function to retrieve stored user data
+renderUserInput();
+
+function renderUserInput() {
+    var userDesc1 = localStorage.getItem("desc1");
+
+    if(userDesc1 === null){
+        return;
+    }
+
+    desc1El.textContent = userDesc1;
+}
+
+// event listener to store user input upon click of Save button
 saveBtnEl.on("click", function (event) {
-    // alert("Button Clicked!");
     event.preventDefault();
-    var input = $(this).val();
-    console.log(input);
+    var input = $("#desc1").val();
     localStorage.setItem("input", JSON.stringify(input));
+
+    renderUserInput();
 });
