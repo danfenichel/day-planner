@@ -113,3 +113,9 @@ saveBtnEl.on("click", function (event) {
 
     renderUserInput();
 });
+
+// clear button - clears all local storage
+$("#clearBtn").on("click", function () {
+    localStorage.clear();
+    $(".description").text("");
+});
