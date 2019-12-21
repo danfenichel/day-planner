@@ -10,20 +10,31 @@
     1. A field to hold user input
     1. save button
 * Clicking on the save button will store the time and user input in `localStorage'
+
 # Motivation
 AS AN employee with a busy schedule
 I WANT to add important events to a daily planner
 SO THAT I can manage my time effectively 
+
 # Requirements
-* Play proceeds as follows:
-  * The user arrives at the landing page and is presented with a call-to-action to "Start Quiz." Also note the navigation option to "View Highscores" and the "Time" value set at 0.
-  * Clicking the "Start Quiz" button presents the user with a series of questions. The timer is initialized with a value and immediately begins countdown.
-  * Score is calculated by time remaining. Answering quickly and correctly results in a higher score. Answering incorrectly results in a time penalty (for example, 15 seconds are subtracted from time remaining).
-  * When time runs out and/or all questions are answered, the user is presented with their final score and asked to enter their initials. Their final score and initials are then stored in `localStorage`.
-* Your application should also be responsive, ensuring that it adapts to multiple screen sizes.
+* Functional, deployed application.
+
+* GitHub repository with a unique name and a README describing project.
+
+* The application displays timeblocks for standard business hours (9 a.m. to 5 p.m.).
+
+* Each timeblock contains an input field and save button.
+
+* Clicking a timeblock's "Save" button stores the input text in local storage, allowing the text to persist when the application is refreshed.
+
+* The current day is displayed at the top of the calendar.
+
+* Each timeblock is color coded to indicate whether it is in a past, present, or future hour.
+
 # Code style
 * HTML
 * CSS
 * js-standard-style
+
 # Screenshots
 ![Screenshot](Assets/Screenshot.png)
