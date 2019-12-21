@@ -24,4 +24,4 @@ SO THAT I can manage my time effectively
 * CSS
 * js-standard-style
 # Screenshots
-![Screenshot](/assets/Screenshot.png)
+![Screenshot](Assets/Screenshot.png)
