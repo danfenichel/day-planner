@@ -21,8 +21,27 @@ textarea{
     border-bottom: 10px solid black;
 }
   
+.col-md-10 .col-md-1 {
+    padding-left: 0px !important;
+    height: 100%;
+}
+
 .description{
+    vertical-align: top;
+    background: transparent;
+    border: none;
+    color: #000000;
+    padding: 10px;
     white-space: pre-wrap;
+    font-size: 24px;
+    height: 100%;
+    width: 100%;
+    resize: none;
+    box-sizing: border-box;
+    position: relative;
+    left: 0px;
+    top: -33px;
+    outline: none;
 }
   
 .time-block{
